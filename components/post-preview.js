@@ -1,7 +1,6 @@
-import Link from 'next/link'
-import Avatar from '../components/avatar'
-import DateComponent from '../components/date'
-import CoverImage from './cover-image'
+import Link from "next/link";
+import DateComponent from "../components/date";
+import CoverImage from "./cover-image";
 
 export default function PostPreview({
   title,
@@ -25,7 +24,6 @@ export default function PostPreview({
         <DateComponent dateString={date} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      {author && <Avatar name={author.name} picture={author.picture} />}
     </div>
-  )
+  );
 }
